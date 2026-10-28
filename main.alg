@@ -1,0 +1,4 @@
+algoritmo EntradaShow
+ 
+var
+
