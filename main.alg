@@ -16,7 +16,7 @@ escreva("Digite o numero do ticket: ")
    escreva("O visitante possui um objeto ilícito? (sim/nao): ")
    leia(ilicito)
 
-se ((NUMEROTICKET <= 10) e (IDADE >= 18) e (ilicito = "nao") entao
+se ((NUMEROTICKET <= 100) e (IDADE >= 18) e (ilicito = "nao") entao
     escreval("Voce entra no evento"))
 senao
     escreval("Voce nao entra no evento")
