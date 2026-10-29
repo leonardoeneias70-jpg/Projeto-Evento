@@ -6,29 +6,20 @@ NUMEROTICKET:inteiro
 IDADE:inteiro
 ilicito:caractere
 inicio
-escreval("INFORME O NÚMERO DO SEU TICKET:")
-leia(NUMEROTICKET)
 
-se NUMEROTICKET <= 10 entao 
-    escreval("Voce entra no evento")
-senao 
-    escreval("Voce nao entra !")
-Fimse
+escreva("Digite o numero do ticket: ")
+   leia(NUMEROTICKET)
 
-escreval("Informe a sua idade:")
-leia(IDADE)
+   escreva("Digite sua idade: ")
+   leia(IDADE)
 
-se IDADE >= 18 entao
-    escreval("Voce entra no evento")
+   escreva("O visitante possui um objeto ilícito? (sim/nao): ")
+   leia(ilicito)
+
+se ((NUMEROTICKET <= 10) e (IDADE >= 18) e (ilicito = "nao") entao
+    escreval("Voce entra no evento"))
 senao
-    escreval("Voce nao entra !")
-Fimse
+    escreval("Voce nao entra no evento")
+    fimse
 
-escreval("Voce foi revistado, foi encontrado algum objeto ilícito?")
-leia(ilicito)
-se ilicito = "SIM" entao
-    escreval("Voce nao entra!")
-senao
-    escreval("Voce entra no evento")
-fimse
 Fimalgoritmo
